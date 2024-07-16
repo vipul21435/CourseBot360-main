@@ -1,0 +1,425 @@
+[
+    {
+        "Code": "BIO101",
+        "Acronym": "FOB",
+        "Title": "Foundations of Biology",
+        "Credits": 4,
+        "Description": "The objective of this course is to provide an introduction to the foundations of biology including the chemistry of life, cellular mechanisms, genetics and mechanisms of evolution.",
+        "Assessment": {
+            "Quizzes": 40,
+            "Midsem": 20,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "BIO111",
+        "Acronym": "CBBC",
+        "Title": "Cell Biology and Biochemistry",
+        "Credits": 4,
+        "Description": "The aim of this basic core course is to provide students a decent background in cell biology and biochenmistry. The major focus is to a) cover most important concepts in cell biology like structure and functions of cell, proteins, and signal transduction mechanisms b) cover biological thermodynamics, enzyme kinetics and metabolism and finally c) solve qualitative and quantitative problems",
+        "Assessment": {
+            "Quizzes": 40,
+            "Midsem": 20,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "BIO213",
+        "Acronym": "IQB",
+        "Title": "Introduction to Quantitative Biology",
+        "Credits": 4,
+        "Pre-requisites": "MTH100",
+        "Description": "This course will discuss some fundamental aspects of ecological, evolutionary, genetics, and epidemic models as studied by quantitative approaches. Simple mathematical and computational tools will be taken up to carry out quantitative analysis of biological systems. In addition, students will be introduced to MATLAB. Assignments and project work will include quantitative study and data analysis for biological processes (using MATLAB).",
+        "Assessment": {
+            "Assignments": 15,
+            "Quizzes": 40,
+            "Midsem": 20,
+            "Endsem": 25
+        }
+    },
+    {
+        "Code": "BIO221",
+        "Acronym": "PB",
+        "Title": "Practical Bioinformatics",
+        "Credits": 4,
+        "Pre-requisites": "CSE101",
+        "Description": "This objective of this course is to provide introduction to modern biology, data-oriented questions, and training in application of computational techniques for data analysis. Apart from providing conceptual understanding of important topics in bioinformatics, the focus is on hands-on training in implementation of techniques. Through combination of lectures, exercises, assignments and presentations, the student is expected to achieve practical understanding of bioinformatics techniques.",
+        "Assessment": {
+            "Assignments": 40,
+            "Project": 10,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "CSE101",
+        "Acronym": "IP",
+        "Title": "Introduction to Programming",
+        "Credits": 4,
+        "Description": "Introduction of Programming is the first programming course in the college curriculum, and aims to bridge the gap between students who have prior coding experience and those who have none. The main goal of this course is to prepare students to understand basic algorithms and data structures, write organized code, and to gain practical experience with debugging, compiling and running programs.",
+        "Assessment": {
+            "Labs": 22.5,
+            "Assignments": 22.5,
+            "Quizzes": 15,
+            "Midsem": 15,
+            "Endsem": 25
+        }
+    },
+    {
+        "Code": "CSE102",
+        "Acronym": "DSA",
+        "Title": "Data Structures & Algorithms",
+        "Credits": 4,
+        "Pre-requisites": "CSE101",
+        "Description": "This course is aimed at giving students a background in basic data structures and algorithms along with their impact in solving real life problems using a computer. The major focus will be on covering the basic data structures, b) Algorithm analysis using recurrence relations and c) problem solving using C++.",
+        "Assessment": {
+            "Labs": 15,
+            "Assignments": 10,
+            "Quizzes": 10,
+            "Midsem": 30,
+            "Endsem": 35
+        }
+    },
+    {
+        "Code": "CSE112",
+        "Acronym": "CO",
+        "Title": "Computer Organization",
+        "Credits": 4,
+        "Pre-requisites": "ECE111",
+        "Description": "This course considers a computer as a stand alone device. It deals with basic computer functionality, and how it is realized in software. We deal in detail with the hardware organization that delivers it. The layers in the computer organization are revealed systematically and the manner in which organizational components are managed is described. The course lays the basis for more advanced topics in computer science, both hardware and software.",
+        "Assessment": {
+            "Assignments": 10,
+            "Quizzes": 20,
+            "Midsem": 30,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "CSE121",
+        "Acronym": "DM",
+        "Title": "Discrete Mathematics",
+        "Credits": 4,
+        "Description": "Discrete Mathematics is the study of mathematical structures (objects) which are discrete, distinct in nature. This course provides the mathematical basis for the understanding of computers and modern computation. It is the backbone of computer science and has a lot of applications in cryptography and engineering.",
+        "Assessment": {
+            "Homeworks": 10,
+            "Quizzes": 20,
+            "Midsem": 30,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "CSE201",
+        "Acronym": "AP",
+        "Title": "Advanced Programming",
+        "Credits": 4,
+        "Pre-requisites": "CSE101,CSE102",
+        "Description": "The Advanced Programming is a successor to the Introduction of Programming course. The main goal of this course is to prepare students to the challenge of building large-scale programs which multiple functional components, some of which could be designed/implemented independently. The course will use Java to to introduce students to concepts of object orientation, reusable code design, test-driven development, programming to an application-programming-interface, pattern oriented program design and implementation etc. At the end of the course the students are expected to be able to work in teams in order to develop large application programs starting from a reasonably well-defined application design with multiple independent components with well-defined interfaces. NOTE: The course is not meant to teach the features of Java programming language",
+        "Assessment": {
+            "Assignments": 20,
+            "Quizzes": 10,
+            "Project": 20,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "CSE202",
+        "Acronym": "DBMS",
+        "Title": "Fundamentals of database management systems",
+        "Credits": 4,
+        "Pre-requisites": "CSE102",
+        "Description": "This is a first course on database systems at the undergraduate level, covering fundamentals concepts, aspects of database design, database query languages and database system implementation. Students are taught concepts and algorithms in a general setting that is not tied to any one particular database system. The course emphasizes both theory and application of database systems. The course includes hands-on experience of designing and using databases, and building small database-backed applications.",
+        "Assessment": {
+            "Quizzes": 10,
+            "Homeworks": 10,
+            "Project": 30,
+            "Midsem": 25,
+            "Endsem": 25
+        }
+    },
+    {
+        "Code": "CSE222",
+        "Acronym": "ADA",
+        "Title": "Algorithm Design & Analysis",
+        "Credits": 4,
+        "Pre-requisites": "CSE101,CSE102,CSE121",
+        "Description": "The focus of this course in on the design of algorithms, proofs of correctness and methods to analyse resource requirements of their algorithms. Students learn fundamental algorithmic design paradigms such as greedy algorithms, dynamic programming, divide and conquer, etc. and also learn some more data structures. The later part of the course focuses on the limitations of algorithms. In particular, the theory of NP-completeness. Students are also required to design and implement algorithms using the techniques the learn.",
+        "Assessment": {
+            "Assignments": 15,
+            "Quizzes": 25,
+            "Midsem": 30,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "CSE231",
+        "Acronym": "OS",
+        "Title": "Operating Systems",
+        "Credits": 4,
+        "Pre-requisites": "CSE102",
+        "Description": "Operating system is the interface between the hardware and the user; it is responsible for the management and coordination of activities and the sharing of the resources of the computer. Operating system offers a number of services to application programs and users. Applications access these services through application programming interfaces (APIs) or system calls. By invoking these interfaces, the application can request a service from the operating system, pass parameters, and receive the results of the operation. The course on Operating System has two components: theory and programming. Theory component covers the underline concepts and principles of operating system whereas programming component involves the practical implementation of theoretical concepts.",
+        "Assessment": {
+            "Assignments": 50,
+            "Quizzes": 10,
+            "Midsem": 20,
+            "Endsem": 20
+        }
+    },
+    {
+        "Code": "CSE232",
+        "Acronym": "CN",
+        "Title": "Computer Networks",
+        "Credits": 4,
+        "Pre-requisites": "CSE101,CSE222,CSE231",
+        "Description": "This course teaches the standard layers in network, circuit and packet switching, protocols at the link layer, routing algorithms, TCP/IP protocol, and new challenges in wireless networks.",
+        "Assessment": {
+            "Assignments": 25,
+            "Quizzes": 15,
+            "Midsem": 20,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "CSE573",
+        "Acronym": "ISY",
+        "Title": "Interactive Systems",
+        "Credits": 4,
+        "Anti-requisites": "DES130",
+        "Description": "With advent of different computing platform, e.g., mobile phones, smart-watches, smart-TVs, VR, Web, we are surrounded by interactive systems and we use them regularly for pleasure, accessing service, or even by compulsion. Despite tremendous progress in technology, many of the current day systems are hard to use for a non-tech savvy population? The course will teach you how to design and develop usable interactive systems. It will also develop skills to analyze and critique existing systems and understand ways by which some of these systems may be violating some of the fundamental usability principles and what can be done to fix it.",
+        "Assessment": {
+            "Assignments": 30,
+            "Project": 30,
+            "Midsem": 15,
+            "Endsem": 25
+        }
+    },
+    {
+        "Code": "DES102",
+        "Acronym": "IHCI",
+        "Title": "Introduction to HCI",
+        "Credits": 4,
+        "Description": "This course will provide a theoretical and practical understanding of human-computer interaction (HCI) design including concepts of user centered and design thinking, usability, interfaces, rapid prototyping, and evaluation. This is a project-based course where students can work on different user-centric prototypes.",
+        "Assessment": {
+            "Quizzes": 40,
+            "Project": 10,
+            "Midsem": 25,
+            "Endsem": 25
+        }
+    },
+    {
+        "Code": "DES130",
+        "Acronym": "PIS",
+        "Title": "Prototyping Interactive Systems",
+        "Credits": 4,
+        "Anti-requisites": "CSE573",
+        "Description": "Introduction to Engineering Design is a multidisciplinary course offered with an aim to ignite your mind with concepts in design and innovation as well as engineering skills needed to build physical prototypes. This hands-on learning course is divided into 3 parts: In the first part, you will learn to work with microcontrollers, smartphones, low- cost materials, and power tools through several in-class activities and lab exercises. In the second part, you will apply these skills to a two-week long minor group project for a given design brief. The last part of the course is dedicated to the realization of an open- ended major group project. For this project, you will identify a problem, preferably having a social impact, plan your project and, finally, build a functional solution. The course culminates with a public showcase of the final prototypes.",
+        "Assessment": {
+            "Labs": 30,
+            "Assignments": 20,
+            "Project": 50
+        }
+    },
+    {
+        "Code": "DES205",
+        "Acronym": "DIS",
+        "Title": "Design of Interactive Systems",
+        "Credits": 4,
+        "Pre-requisites": "DES102",
+        "Description": "The objective of this course is to learn all the aspects of design and development of interactive systems, which are now an important part of our lives. The design and usability of these systems leave an effect on the quality of people’s relationship to technology. Web applications, social media applications, multimedia applications, embedded devices, etc., are all a part of this system, which has become an integral part of our lives. By the end of the course, the students will be familiar with the goals, problems and structure of interactive system design process. Moreover, the students will be exposed to the core techniques for task analysis and user analysis. Furthermore, students will be able to understand the innovative features of interactive system and be able to improve existing interfaces by considering these features.",
+        "Assessment": {
+            "Assignments": 20,
+            "Project": 40,
+            "Midsem": 15,
+            "Endsem": 25
+        }
+    },
+    {
+        "Code": "DES524",
+        "Acronym": "EFD",
+        "Title": "Ergonomics / Human Factors for Design",
+        "Credits": 4,
+        "Description": "In designing, ergonomics takes care of the users' need, their limitations and abilities. Various aspects of basic anthropometry, physical, physiological, psychological and biomechanical limitations and abilities of the human body with reference to human centred design of products and systems will be explained. Students will: a) learn the principles, overview and background of ergonomics; b) develop the skill to identify the user friendly man machine environment system; and c) understand the methods and processes to evaluate the products, facilities, environment, jobs and tasks. This course will help in finding real time solutions to improve the quality of life and performance of an individual.",
+        "Assessment": {
+            "Assignments": 20,
+            "Project": 30,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "ECE111",
+        "Acronym": "DC",
+        "Title": "Digital Circuits",
+        "Credits": 4,
+        "Description": "Introduction to Digital Circuits. The aim of the course is to get the students through the process of Digital Circuit Design after introducing the students to signal representation, Boolean Algebra, Logic Gates and Design with Logic Gates. Give them the awareness of Combinational and Sequential Circuits and their Design approaches. The students will be exposed to Pipelining concepts and an introduction to Semiconductor Memories.",
+        "Assessment": {
+            "Labs": 15,
+            "Assignments": 10,
+            "Quizzes": 15,
+            "Midsem": 20,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "ECE113",
+        "Acronym": "BE",
+        "Title": "Basic Electronics",
+        "Credits": 4,
+        "Description": "The course introduces the topics of (a) Circuit elements - active, passive, time-variant, time - invariant, linear, non-linear, unilateral, bilateral; (b) Sources - independent and dependent; (c) Electric circuit and analysis - Ohm's law, Kirchhoff's laws, loop and node analyses, limitations of lumped circuit analysis; (d) Network theorems - Superposition, Thevenin, Norton, Maximum power transfer; (e) Natural and forced responses to DC excitation - RL, RC and RLC circuits; Sinusoidal steady state analysis; (f) Designing basic circuits using operational amplifiers; (g) Basic circuits using diodes.",
+        "Assessment": {
+            "Labs": 20,
+            "Assignments": 15,
+            "Quizzes": 15,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "ECE210",
+        "Acronym": "PSD",
+        "Title": "Physics of Semiconductor Devices",
+        "Credits": 4,
+        "Description": "This course is designed to prepare the fundamental concepts of semiconductor physics, which are necessary to understand electronic devices. It will introduce students to the materials, transport mechanisms, and basic insight into various electronic and optoelectronic devices such as pn junction diodes, Schottky diodes, solar cells, LEDs, and the foundation of MOSFET. This course will ensure that students, even with a minimal background in semiconductors, grasp the concepts and prepare for more advanced courses in semiconductor technology.",
+        "Assessment": {
+            "Assignments": 20,
+            "Quizzes": 20,
+            "Midsem": 30,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "ECE211",
+        "Acronym": "ESD",
+        "Title": "Electronic System Design",
+        "Credits": 4,
+        "Pre-requisites": "ECE113",
+        "Description": "The aim of the course is to develop an appreciation and understanding of the processes for design of electronic instruments, gadgets and systems through a hands-on project approach. The course outcomes include (a) the ability to plan and partition the user requirement of any electronic gadget or system in smaller, manageable building blocks and then (b) implement them using contemporary available technology, including microcontrollers, sensors, input devices and output actuators in a professional enclosure with suitable user interface; (c) select and program microcontroller platforms based on user requirements (d) design suitable power supply for the system (e) debug and document the entire system.",
+        "Assessment": {
+            "Assignments": 10,
+            "Project": 50,
+            "Midsem": 20,
+            "Endsem": 20
+        }
+    },
+    {
+        "Code": "ECE214",
+        "Acronym": "IE",
+        "Title": "Integrated Electronics",
+        "Credits": 4,
+        "Pre-requisites": "ECE111, ECE113,DES130",
+        "Description": "The course focuses on building the ability to analyze and design electronic circuits. This course starts with an overview of semiconductor technology. Subsequently it covers Bipolar Junction Transistor (BJT), Small Signal BJT models, BJT based amplifiers, Metal Oxide Field Effect Transistors (MOSFET), Small Signal MOS models, MOSFET based amplifiers; and analog and digital circuits and applications. Design and lab exercises are also significant components of the course.",
+        "Assessment": {
+            "Assignments": 10,
+            "Quizzes": 10,
+            "Labs": 20,
+            "Midsem": 30,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "ECE250",
+        "Acronym": "S&S",
+        "Title": "Signals and Systems",
+        "Credits": 4,
+        "Pre-requisites": "MTH100",
+        "Description": "This course introduces the concepts of continuous and discrete time signal representation, Linear Time Invariant Systems (LTI), Fourier series representation of periodic signals, continuous and discrete time Fourier transform, Laplace and Z-transforms and their application.",
+        "Assessment": {
+            "Assignments": 30,
+            "Quizzes": 16,
+            "Midsem": 24,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "MTH100",
+        "Acronym": "M1",
+        "Title": "Math 1",
+        "Credits": 4,
+        "Description": "This first level math course covers basics of linear algebra including vector spaces, matrix algebra, linear transformations, eigenvalues and eigenvectors, orthogonality, properties of symmetric matrices, positive definite matrices, and SVD. The course is developed with an aim to provide a strong foundation in linear algebra which will be used in the subsequent curriculum by both CS and ECE students. Time permitting, some applications of linear algebra in engineering disciplines will be introduced. The course also attempts to increase the mathematical maturity of students by introducing proofs and mathematical rigour.",
+        "Assessment": {
+            "Quizzes": 25,
+            "Project": 10,
+            "Midsem": 20,
+            "Endsem": 45
+        }
+    },
+    {
+        "Code": "MTH201",
+        "Acronym": "P&S",
+        "Title": "Probability and Statistics",
+        "Credits": 4,
+        "Description": "The course introduces students to probability theory and how it can be applied to statistical problems. They learn about probabilistic models that occur in common applications. They are introduced to probability mass and density functions and statistics like expectation, correlation, and covariance. This is followed by an introduction to sampling statistics like the sample mean and variance, statistical hypothesis testing, and parameter estimation.",
+        "Assessment": {
+            "Assignments": 20,
+            "Quizzes": 25,
+            "Midsem": 25,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "MTH203",
+        "Acronym": "M3",
+        "Title": "Multivariate Calculus",
+        "Credits": 4,
+        "Description": "This course covers topics in multivariable calculus, vector calculus and complex analysis. The course starts with an extension of concepts like limits, continuity and differentiation to functions of several variables. Partial differentiation is defined and applied. The idea of Taylor series is extended to functions of two variables. This is followed by a definition and application of integration in more than one dimensions: double and triple integrals. We then work with vector functions and develop the ideas of vector fields and differentiation and integration as applicable to vector calculus (gradient, divergence, curl, line and surface integrals, etc. The ideas of circulation and flux are developed and Green's, Stoke's and divergence theorems are covered. The final module of the course deals with complex numbers and functions and an extension of concepts of calculus to complex variables.",
+        "Assessment": {
+            "Homeworks": 10,
+            "Quizzes": 20,
+            "Midsem": 30,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "MTH204",
+        "Acronym": "M4",
+        "Title": "Differential Equations",
+        "Credits": 4,
+        "Description": "This is the first course in differential equations (ordinary and partial) to be taken by students in their second year of undergraduate studies. The primary focus of the course will be on learning how to solve linear second order ODEs (homogeneous as well as non-homogeneous) and PDEs (wave, heat and Laplace) using different methods. The course will also extend to systems of linear ordinary differential equations including a discussion on qualitative methods for nonlinear systems.",
+        "Assessment": {
+            "Homeworks": 30,
+            "Midsem": 30,
+            "Endsem": 40
+        }
+    },
+    {
+        "Code": "SOC101",
+        "Acronym": "ISA",
+        "Title": "Introduction to Sociology and Anthropology",
+        "Credits": 4,
+        "Pre-requisites": "SSH101",
+        "Description": "This course will introduce learners to the basic nature of society and its impact on an individual through the lens of Sociology and Anthropology. It will focus on some foundational sociological/anthropological concepts such as social structure, environment, social organization, social institutions, social role, social relations, social change and social problems. All these key terms would be examined with reference to modern social theories and methods, which barely 200 years ago, helped shape sociology and anthropology as unique human disciplines. Historically, both these disciplines were distinct from the earlier disciplines of economics, philosophy and psychology because they directly confronted data from social life and collective social processes in the ‘field’, in order to critically analyze, and discover patterns and meanings in them. The enormous diversity of people around the globe could thus be organized conceptually and theoretically through statistical surveys, questionnaires and interviews, not only to make sense of the basic oneness of humanity but also to shape policies and programmes to help improve the fast deteriorating social conditions under modern urban and industrialised ways of life. The irreducible subject matter and unit of study for sociology and anthropology therefore was neither the abstract atomized individual nor the crowd but the empirical relationship between the individual and his/her social context which had to be unearthed and examined afresh by the scholar without getting misled by more obvious, subjective explanations. Students of the course will be led through a variety of experiences of observable social phenomena such as caste, class, gender, race, sexuality, religion, globalization, poverty, crime, work and many such others, in order to arrive at the basic scientific principles of society.",
+        "Assessment": {
+            "Assignments": 10,
+            "Quizzes": 10,
+            "Project": 30,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "SSH101",
+        "Acronym": "CTRSS",
+        "Title": "Critical Thinking and Readings in Social Science",
+        "Credits": 4,
+        "Description": "This course offers an introduction to ideas about reasoning and elements of thinking critically. In particular, it develops an appreciation of the relevance of reasoning and ideation in the realm of the social sciences. It includes an introduction to key elements and concepts of reasoning and informal logic as well as an applied component which uncovers the value of critical thinking involved in social theory building. In the first part of the course, students will learn about types and nature of good and bad arguments. They 'll be able to differentiate and evaluate the logic in deductive arguments and understand key concepts of validity and soundness. Similarly, students will also be introduced to ideas in inductive thinking and to ways in which one can spot fallacies and other common mistakes. In addition, this course also introduces students, many of whom will be handling social science data for the first time, to the role of critical thinking in social theory development; including in making observations, developing concepts as well as in coming up with explanations that form the basis for doing modern social sciences. The course ends with an exposition on the role of computational power and its implications for values in an era of big data.",
+        "Assessment": {
+            "Quizzes": 20,
+            "Project": 30,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    },
+    {
+        "Code": "SSH121",
+        "Acronym": "IPHI",
+        "Title": "Introduction to Philosophy",
+        "Credits": 4,
+        "Description": "Furnish students with an overview of the different branches of philosophy (primarily western philosophy). In the process, the student will make the acquaintance of epistemology, metaphysics, logic, ethics, philosophy of religion and more. A major focus of the course: to remove the false mystique surrounding philosophy and to give the student a clear grounding in the essentials of the discipline.",
+        "Assessment": {
+            "Assignments": 20,
+            "Project": 30,
+            "Midsem": 20,
+            "Endsem": 30
+        }
+    }
+]
