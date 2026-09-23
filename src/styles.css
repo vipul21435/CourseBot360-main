@@ -1,0 +1,338 @@
+/* ---------------------------------------------------------------------------
+   CourseBot360.
+
+   Both themes are defined as custom properties and swapped by one attribute on
+   <html>, rather than by writing inline gradients onto every message the way
+   the first version did.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --font: 'Ubuntu', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg: #eef4fb;
+  --surface: #ffffff;
+  --surface-sunk: #f4f7fb;
+  --ink: #16202c;
+  --ink-soft: #4a5a6b;
+  --line: #c9d5e2;
+
+  --accent: #1c4fa1;
+  --accent-dark: #143a79;
+  --user-bubble: #1c4fa1;
+  --user-ink: #ffffff;
+  --bot-bubble: #f4f7fb;
+  --bot-ink: #16202c;
+
+  --radius: 12px;
+  --focus: 3px solid #d2691e;
+  --shadow: 0 6px 24px rgb(20 32 44 / 12%);
+}
+
+:root[data-theme='dark'] {
+  --bg: #0d1219;
+  --surface: #151d27;
+  --surface-sunk: #1b2530;
+  --ink: #e8eef5;
+  --ink-soft: #a7b6c6;
+  --line: #2c3a49;
+
+  --accent: #6da2f5;
+  --accent-dark: #4b84d8;
+  --user-bubble: #2a5fae;
+  --user-ink: #ffffff;
+  --bot-bubble: #1b2530;
+  --bot-ink: #e8eef5;
+
+  --shadow: 0 6px 24px rgb(0 0 0 / 45%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  font-family: var(--font);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+:focus-visible {
+  outline: var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent-dark);
+  color: #fff;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- shell --------------------------------------------------------------- */
+
+.app {
+  width: min(52rem, 100%);
+  height: min(46rem, 88vh);
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.01em;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  min-height: 2.5rem;
+  padding: 0.35rem 0.9rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border: 2px solid rgb(255 255 255 / 55%);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: rgb(255 255 255 / 15%);
+  border-color: #fff;
+}
+
+.controls button[aria-pressed='true'] {
+  background: #fff;
+  color: var(--accent-dark);
+  border-color: #fff;
+}
+
+/* --- transcript ---------------------------------------------------------- */
+
+.transcript {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  background: var(--surface);
+}
+
+.msg {
+  max-width: 85%;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius);
+  overflow-wrap: anywhere;
+}
+
+.msg > :first-child {
+  margin-top: 0;
+}
+
+.msg > :last-child {
+  margin-bottom: 0;
+}
+
+.msg--user {
+  align-self: flex-end;
+  background: var(--user-bubble);
+  color: var(--user-ink);
+}
+
+.msg--bot {
+  align-self: flex-start;
+  background: var(--bot-bubble);
+  color: var(--bot-ink);
+  border: 1px solid var(--line);
+}
+
+.answer-heading {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.answer-subheading {
+  margin: 0.9rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.answer-text {
+  margin: 0 0 0.6rem;
+}
+
+.answer-list {
+  margin: 0.3rem 0 0.6rem;
+  padding-left: 1.3rem;
+}
+
+.answer-list li {
+  margin-bottom: 0.2rem;
+}
+
+.answer-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 1rem;
+  margin: 0 0 0.6rem;
+}
+
+.answer-facts dt {
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.msg--bot .answer-facts dt {
+  color: var(--ink-soft);
+}
+
+.answer-facts dd {
+  margin: 0;
+}
+
+.answer-link {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* --- suggestions and composer -------------------------------------------- */
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem 0;
+  background: var(--surface-sunk);
+  border-top: 1px solid var(--line);
+}
+
+.chip {
+  min-height: 2.25rem;
+  padding: 0.3rem 0.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+
+.composer {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--surface-sunk);
+}
+
+.composer input {
+  flex: 1;
+  min-height: 3rem;
+  padding: 0.6rem 0.9rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.composer input:hover {
+  border-color: var(--accent);
+}
+
+.composer button {
+  min-height: 3rem;
+  padding: 0.6rem 1.5rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  border: 2px solid var(--accent-dark);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.composer button:hover {
+  background: var(--accent-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 34rem) {
+  body {
+    padding: 0;
+  }
+  .app {
+    height: 100vh;
+    border-radius: 0;
+    border: 0;
+  }
+  .msg {
+    max-width: 95%;
+  }
+}

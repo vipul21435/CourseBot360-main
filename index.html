@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ask about IIIT Delhi courses — credits, assessment weightings, pre-requisites — in plain English."
+    />
+    <title>CourseBot360 — your course guide</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#message">Skip to the question box</a>
+
+    <div class="app">
+      <header class="app-header">
+        <h1>CourseBot360</h1>
+        <div class="controls">
+          <button type="button" id="theme-toggle" aria-pressed="false">Dark mode</button>
+          <button type="button" id="speech-toggle" aria-pressed="false" hidden>Speech off</button>
+          <button type="button" id="clear">Clear</button>
+        </div>
+      </header>
+
+      <div
+        class="transcript"
+        id="transcript"
+        role="list"
+        aria-label="Conversation"
+      ></div>
+
+      <!-- Replies are announced here once, so a screen reader does not read the
+           whole transcript again each time a bubble is appended. -->
+      <p class="visually-hidden" id="status" role="status" aria-live="polite"></p>
+
+      <div class="suggestions" id="suggestions" aria-label="Example questions"></div>
+
+      <form class="composer" id="composer" autocomplete="off">
+        <label class="visually-hidden" for="message">Ask a question about a course</label>
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Ask about a course — try &quot;info about DSA&quot;"
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
