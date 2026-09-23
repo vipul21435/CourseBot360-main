@@ -12,17 +12,17 @@ const TECHTREE = 'https://techtree.iiitd.edu.in/viewDescription/filename?=';
 
 const answer = (text, blocks = []) => ({ text, blocks });
 
-const courseLine = (course) => `${course.code} — ${course.Title}`;
+const courseLine = (course) => `${course.code} - ${course.Title}`;
 
 const percent = (value) => `${value}%`;
 
 function overview(course) {
   const blocks = [
-    { type: 'heading', text: `${course.code} — ${course.Title}` },
+    { type: 'heading', text: `${course.code} - ${course.Title}` },
     {
       type: 'facts',
       items: [
-        { label: 'Acronym', value: course.acronym || '—' },
+        { label: 'Acronym', value: course.acronym || '-' },
         { label: 'Credits', value: String(course.Credits) },
         { label: 'Pre-requisites', value: course.prerequisites.join(', ') || 'None' },
         { label: 'Anti-requisites', value: course.antirequisites.join(', ') || 'None' },
@@ -42,7 +42,7 @@ function overview(course) {
 
   blocks.push({ type: 'link', href: `${TECHTREE}${course.code}`, text: 'Full description on TechTree' });
 
-  return answer(`${course.code} — ${course.Title}`, blocks);
+  return answer(`${course.code} - ${course.Title}`, blocks);
 }
 
 function listing(title, courses, emptyText) {
@@ -132,7 +132,7 @@ export function respond(message, catalogue) {
       const name = parsed.component.toLowerCase();
       const text =
         typeof weight === 'number'
-          ? `Yes — ${name} count for ${percent(weight)} of ${course.code}.`
+          ? `Yes - ${name} count for ${percent(weight)} of ${course.code}.`
           : `No, ${course.code} has no ${name}.`;
       return { ...answer(text), intent: parsed.intent };
     }
@@ -148,7 +148,7 @@ export function respond(message, catalogue) {
           {
             type: 'list',
             items: resolved.map(({ code, course: found }) =>
-              found ? courseLine(found) : `${code} — not in this catalogue`,
+              found ? courseLine(found) : `${code} - not in this catalogue`,
             ),
           },
         ]),
@@ -167,7 +167,7 @@ export function respond(message, catalogue) {
           {
             type: 'list',
             items: resolved.map(({ code, course: found }) =>
-              found ? courseLine(found) : `${code} — not in this catalogue`,
+              found ? courseLine(found) : `${code} - not in this catalogue`,
             ),
           },
         ]),
@@ -244,7 +244,7 @@ export function respond(message, catalogue) {
     default:
       return {
         ...answer(
-          "I did not catch that. Ask about a course by its code or acronym — say CSE101 or DSA — or type help.",
+          "I did not catch that. Ask about a course by its code or acronym - say CSE101 or DSA - or type help.",
         ),
         intent: INTENTS.UNKNOWN,
       };

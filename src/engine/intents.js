@@ -55,7 +55,7 @@ const COMPARATORS = [
   { test: /\b(?:exactly|equal to|=)\b/i, comparator: 'eq' },
 ];
 
-/** Course codes look like ABC123; acronyms are 2–6 letters. */
+/** Course codes look like ABC123; acronyms are 2-6 letters. */
 const CODE_PATTERN = /\b([A-Z]{2,4}\s?\d{3})\b/i;
 
 function findCourseToken(text, catalogue) {

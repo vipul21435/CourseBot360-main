@@ -122,7 +122,7 @@ loadCatalogue()
         { type: 'heading', text: 'CourseBot360' },
         {
           type: 'paragraph',
-          text: `I know about ${loaded.size} courses. Ask by course code or acronym — CSE101 or DSA — or type help.`,
+          text: `I know about ${loaded.size} courses. Ask by course code or acronym - CSE101 or DSA - or type help.`,
         },
       ],
     });

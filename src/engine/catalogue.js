@@ -5,7 +5,7 @@
  * test with a plain array.
  */
 
-/** Requisite fields arrive as "CSE101, MTH100" — split and trimmed. */
+/** Requisite fields arrive as "CSE101, MTH100" - split and trimmed. */
 function splitCodes(value) {
   if (!value) return [];
   return String(value)
