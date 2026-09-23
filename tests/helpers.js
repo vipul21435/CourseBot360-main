@@ -3,8 +3,8 @@ import path from 'node:path';
 
 import { Catalogue } from '../src/engine/catalogue.js';
 
-// Resolved from the project root: under the jsdom environment `import.meta.url`
-// is not a file: URL, so it cannot be used to locate the fixture.
+// Resolved from the project root. Under jsdom `import.meta.url` is not a file:
+// URL, so it cannot locate the fixture.
 const dataPath = path.resolve(process.cwd(), 'public/data/courses.json');
 
 /** The real catalogue, so the tests exercise the data that actually ships. */

@@ -1,9 +1,8 @@
 /**
  * Light and dark mode.
  *
- * One attribute on <html> drives the whole palette from CSS. The original
- * looped over every message element writing inline gradients, and re-registered
- * its hover listeners on each toggle, so the handlers piled up.
+ * One attribute on <html> drives the whole palette from CSS, so nothing has to
+ * walk the messages and restyle them.
  */
 
 const STORAGE_KEY = 'coursebot360.theme';

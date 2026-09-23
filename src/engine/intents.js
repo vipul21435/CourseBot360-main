@@ -1,10 +1,8 @@
 /**
  * Turns a typed question into a structured intent.
  *
- * The original spread this across three files as nested `filter.some(/regex/)`
- * chains that mutated `innerHTML` as they went, so the parsing, the lookup and
- * the rendering were impossible to separate or to test. Here parsing returns a
- * plain object and touches nothing.
+ * Parsing returns a plain object and touches nothing else. Whatever answers the
+ * question, and whatever draws it, is somebody else's problem.
  */
 
 export const INTENTS = {

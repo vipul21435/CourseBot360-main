@@ -7,8 +7,7 @@ const catalogue = realCatalogue();
 const intentOf = (text) => parse(text, catalogue).intent;
 
 describe('the questions the README promises', () => {
-  // Every one of these is advertised in the project README. The original
-  // handled some of them and silently mis-handled the rest.
+  // Every one of these is a question the README tells people they can ask.
   it('List all courses', () => {
     expect(parse('List all courses', catalogue)).toEqual({ intent: INTENTS.LIST_ALL });
   });

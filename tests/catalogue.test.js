@@ -27,8 +27,8 @@ describe('Catalogue', () => {
   });
 
   it('trims requisite codes', () => {
-    // The original split on "," without trimming, so " MTH100" matched nothing
-    // and every prerequisite after the first showed as "Unknown Course".
+    // The fixture writes them as " cse101 , MTH100", which is what the real
+    // file looks like.
     expect(tinyCatalogue().find('CSE201').prerequisites).toEqual(['CSE101', 'MTH100']);
   });
 

@@ -20,8 +20,8 @@ export class Catalogue {
       ...course,
       code: String(course.Code).toUpperCase(),
       acronym: String(course.Acronym ?? '').toUpperCase(),
-      // The original split these without trimming, so " MTH100" never matched
-      // anything and prerequisites silently came back as "Unknown Course".
+      // Trimmed and upper-cased on the way in. The raw field is hand-written
+      // and looks like " cse101 , MTH100".
       prerequisites: splitCodes(course['Pre-requisites']),
       antirequisites: splitCodes(course['Anti-requisites']),
     }));

@@ -1,9 +1,8 @@
 /**
  * Turns an answer's blocks into DOM nodes.
  *
- * Everything is built with createElement and textContent. The original
- * concatenated strings into innerHTML on every branch, which is both how the
- * markup kept breaking and how untrusted text would have got in.
+ * createElement and textContent throughout. Nothing here builds a string and
+ * assigns it to innerHTML, so no answer can carry markup into the page.
  */
 
 const el = (tag, className, text) => {

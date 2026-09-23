@@ -44,7 +44,6 @@ describe('renderMessage', () => {
   });
 
   it('escapes anything that looks like markup', () => {
-    // The original assembled innerHTML by string concatenation on every branch.
     const node = renderMessage('user', '<img src=x onerror="alert(1)">');
     expect(node.querySelector('img')).toBeNull();
     expect(node.textContent).toContain('<img');
@@ -97,8 +96,6 @@ describe('speech', () => {
   });
 
   it('is a no-op rather than an error where it is unsupported', () => {
-    // The original called an undefined `speak()` after every reply, so each
-    // answer threw an uncaught ReferenceError.
     expect(() => speak('hello', { enabled: true })).not.toThrow();
     expect(speak('hello', { enabled: true })).toBe(false);
   });

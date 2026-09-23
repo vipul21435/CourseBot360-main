@@ -1,10 +1,8 @@
 /**
  * Reading answers aloud.
  *
- * The original called `speak(...)` after every reply, but no such function was
- * ever defined, so each answer threw an uncaught ReferenceError. This is that
- * function: off by default, and a no-op wherever the browser has no speech
- * synthesis rather than an error.
+ * Off by default, and a no-op rather than an error where the browser has no
+ * speech synthesis.
  */
 
 export function isSupported() {
