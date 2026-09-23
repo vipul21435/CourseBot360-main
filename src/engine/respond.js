@@ -132,7 +132,7 @@ export function respond(message, catalogue) {
       const name = parsed.component.toLowerCase();
       const text =
         typeof weight === 'number'
-          ? `Yes - ${name} count for ${percent(weight)} of ${course.code}.`
+          ? `Yes, ${name} count for ${percent(weight)} of ${course.code}.`
           : `No, ${course.code} has no ${name}.`;
       return { ...answer(text), intent: parsed.intent };
     }
@@ -148,7 +148,7 @@ export function respond(message, catalogue) {
           {
             type: 'list',
             items: resolved.map(({ code, course: found }) =>
-              found ? courseLine(found) : `${code} - not in this catalogue`,
+              found ? courseLine(found) : `${code} (not in this catalogue)`,
             ),
           },
         ]),
@@ -167,7 +167,7 @@ export function respond(message, catalogue) {
           {
             type: 'list',
             items: resolved.map(({ code, course: found }) =>
-              found ? courseLine(found) : `${code} - not in this catalogue`,
+              found ? courseLine(found) : `${code} (not in this catalogue)`,
             ),
           },
         ]),
@@ -244,7 +244,7 @@ export function respond(message, catalogue) {
     default:
       return {
         ...answer(
-          "I did not catch that. Ask about a course by its code or acronym - say CSE101 or DSA - or type help.",
+          "I did not catch that. Ask about a course by its code or acronym, say CSE101 or DSA, or type help.",
         ),
         intent: INTENTS.UNKNOWN,
       };

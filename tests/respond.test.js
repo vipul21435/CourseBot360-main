@@ -30,7 +30,7 @@ describe('course answers', () => {
   });
 
   it('answers a component question with the real weighting', () => {
-    expect(ask('is there a lab in CSE101').text).toBe('Yes - labs count for 22.5% of CSE101.');
+    expect(ask('is there a lab in CSE101').text).toBe('Yes, labs count for 22.5% of CSE101.');
   });
 
   it('says so plainly when a component is absent', () => {
@@ -50,7 +50,7 @@ describe('course answers', () => {
 
   it('names an unresolvable requisite instead of calling it Unknown Course', () => {
     const text = flatten(respond('pre-requisites of CSE201', tinyCatalogue()));
-    expect(text).toContain('MTH100 - not in this catalogue');
+    expect(text).toContain('MTH100 (not in this catalogue)');
   });
 
   it('lists what a course unlocks', () => {

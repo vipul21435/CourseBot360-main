@@ -5,7 +5,7 @@ import { beforeEach } from 'vitest';
  *
  * jsdom provides one, but recent Node versions also expose an experimental
  * global `localStorage` that can win and does not implement the full Storage
- * interface - `clear()` is missing. Installing our own removes the ambiguity.
+ * interface. `clear()` is missing. Installing our own removes the ambiguity.
  */
 const entries = new Map();
 

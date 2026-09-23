@@ -12,7 +12,7 @@ describe('the questions the README promises', () => {
     expect(parse('List all courses', catalogue)).toEqual({ intent: INTENTS.LIST_ALL });
   });
 
-  it('List all CSE and SSH courses only - both departments, not just the first', () => {
+  it('List all CSE and SSH courses only, picking up both departments', () => {
     expect(parse('List all CSE and SSH courses only', catalogue)).toEqual({
       intent: INTENTS.LIST_BY_DEPARTMENT,
       departments: ['CSE', 'SSH'],
